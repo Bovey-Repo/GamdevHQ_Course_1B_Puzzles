@@ -630,10 +630,10 @@ Transform:
   - {fileID: 960096905}
   - {fileID: 1206377026}
   - {fileID: 1787724647}
-  - {fileID: 1791408160}
-  - {fileID: 285268160}
   - {fileID: 138748145}
   - {fileID: 2079120974}
+  - {fileID: 1791408160}
+  - {fileID: 285268160}
   m_Father: {fileID: 633694150}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1506,7 +1506,7 @@ PrefabInstance:
     - target: {fileID: 3126217594258255233, guid: 3a7f53b22d7c026499590234396e5fcd,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3126217594258255233, guid: 3a7f53b22d7c026499590234396e5fcd,
         type: 3}
@@ -1536,12 +1536,12 @@ PrefabInstance:
     - target: {fileID: 8739375539376734321, guid: 3a7f53b22d7c026499590234396e5fcd,
         type: 3}
       propertyPath: m_Name
-      value: Platform (4)
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 8739375539376734321, guid: 3a7f53b22d7c026499590234396e5fcd,
         type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Wall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a7f53b22d7c026499590234396e5fcd, type: 3}
@@ -1754,7 +1754,7 @@ GameObject:
   - component: {fileID: 1276055930}
   m_Layer: 0
   m_Name: Movable_Box
-  m_TagString: Untagged
+  m_TagString: Moveable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1767,7 +1767,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1276055928}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.553, y: 25.8, z: 0}
+  m_LocalPosition: {x: 3.54, y: 25.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 822888579}
@@ -1787,7 +1787,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!65 &1276055931
 BoxCollider:
@@ -1899,7 +1899,7 @@ PrefabInstance:
     - target: {fileID: 3126217594258255233, guid: 3a7f53b22d7c026499590234396e5fcd,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3126217594258255233, guid: 3a7f53b22d7c026499590234396e5fcd,
         type: 3}
@@ -2107,7 +2107,7 @@ PrefabInstance:
     - target: {fileID: 3126217594258255233, guid: 3a7f53b22d7c026499590234396e5fcd,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3126217594258255233, guid: 3a7f53b22d7c026499590234396e5fcd,
         type: 3}
@@ -2137,12 +2137,12 @@ PrefabInstance:
     - target: {fileID: 8739375539376734321, guid: 3a7f53b22d7c026499590234396e5fcd,
         type: 3}
       propertyPath: m_Name
-      value: Platform (3)
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 8739375539376734321, guid: 3a7f53b22d7c026499590234396e5fcd,
         type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Wall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a7f53b22d7c026499590234396e5fcd, type: 3}
@@ -2903,7 +2903,7 @@ PrefabInstance:
     - target: {fileID: 3126217594258255233, guid: 3a7f53b22d7c026499590234396e5fcd,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3126217594258255233, guid: 3a7f53b22d7c026499590234396e5fcd,
         type: 3}
@@ -3053,7 +3053,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1798249445}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9, y: 1.5, z: 0}
+  m_LocalPosition: {x: -8, y: 2.49, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 963194228}
@@ -3077,6 +3077,7 @@ GameObject:
   - component: {fileID: 1868382301}
   - component: {fileID: 1868382304}
   - component: {fileID: 1868382302}
+  - component: {fileID: 1868382303}
   m_Layer: 0
   m_Name: Pressure_Pad
   m_TagString: Untagged
@@ -3092,7 +3093,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1868382300}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.2, y: 25.8, z: 0.008}
+  m_LocalPosition: {x: 0.2, y: 25.8, z: 0}
   m_LocalScale: {x: 1, y: 0.1, z: 1}
   m_Children:
   - {fileID: 1025687088}
@@ -3112,6 +3113,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 10, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1868382303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1868382300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d395d2ee3cef92548ad33a2744480c1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _padDisplay: {fileID: 1025687089}
+  _hitRange: 0.1
 --- !u!33 &1868382304
 MeshFilter:
   m_ObjectHideFlags: 0
