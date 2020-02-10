@@ -5,38 +5,32 @@ using UnityEngine;
 public class MovingPlatform : MonoBehaviour
 {
     [SerializeField]
-    private Transform _targetA, _targetB;
+    private Transform _pointA, _pointB;
     [SerializeField]
     private float _speed = 3.0f;
-    private bool _switching = false;
 
+    private Transform _target;
 
-    // Update is called once per frame
-    void FixedUpdate()
+    void Start()
     {
-        if (_switching == false)
-        {
-
-            transform.position = Vector3.MoveTowards(transform.position, _targetB.position, _speed * Time.deltaTime);
-        }
-        else if (_switching == true)
-        {
-            transform.position = Vector3.MoveTowards(transform.position, _targetA.position, _speed * Time.deltaTime);
-        }
-
-        if (transform.position == _targetB.position)
-        {
-            _switching = true;
-        }
-        else if (transform.position == _targetA.position)
-        {
-            _switching = false;
-        }
+        _target = _pointB;
     }
 
-    //collison detection with player
-    //if we collide with player
-    //take the player parent = this game object
+    void FixedUpdate()
+    {
+        transform.position = Vector3.MoveTowards(transform.position, _target.position, _speed * Time.deltaTime);
+
+        if (transform.position == _pointA.position)
+        {
+            _target = _pointB;
+        }
+        else if (transform.position == _pointB.position)
+        {
+            _target = _pointA;
+        }
+
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")
@@ -53,7 +47,4 @@ public class MovingPlatform : MonoBehaviour
         }
     }
 
-    //exit collision 
-    //check if the player exited
-    //take the player parent = null 
 }
